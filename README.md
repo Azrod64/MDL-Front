@@ -10,7 +10,7 @@ $ node main.js
 Puis rendez vous sur votre navigateur pour utiliser l'API.
 Tapez : 
 ```
-http://localhost:3000
+http://localhost:5500
 ```
 ## Architecture
 
