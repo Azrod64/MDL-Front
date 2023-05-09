@@ -10,9 +10,6 @@
     <!-- Links -->
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
@@ -38,40 +35,22 @@
         <input value="Créer utilisateur" type="submit">
         <p id="error"></p>
     </form>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase mb-0">Listes des clients</h5>
-                        <br>
-                        <a href="add.html"><button type="button" class="btn btn-primary"><i class="fa fa-user"></i>
-                                Ajouter un
-                                client</button></a>
-                        <a href="graphic.html"><button type="button" class="btn btn-primary"><i
-                                    class="fa fa-bar-chart"></i>
-                                Représentation graphique</button></a>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table no-wrap user-table mb-0">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="border-0 text-uppercase font-medium p1-4">Prénom</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium">Nom</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium">Email</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium">Société</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium">Pays</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium">Date</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium"></th>
-                                </tr>
-                            </thead>
-                            <tbody id="users"></tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col" class="border-0 text-uppercase font-medium p1-4">Prénom</th>
+                <th scope="col" class="border-0 text-uppercase font-medium">Nom</th>
+                <th scope="col" class="border-0 text-uppercase font-medium">Email</th>
+                <th scope="col" class="border-0 text-uppercase font-medium">Société</th>
+                <th scope="col" class="border-0 text-uppercase font-medium">Pays</th>
+                <th scope="col" class="border-0 text-uppercase font-medium">Date</th>
+                <th scope="col" class="border-0 text-uppercase font-medium"></th>
+            </tr>
+        </thead>
+        <tbody id="users"></tbody>
+    </table>
+
 </body>
 
 </html>
