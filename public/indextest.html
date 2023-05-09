@@ -2,42 +2,17 @@
 <html lang="fr">
 
 <head>
-    <!-- Meta-verse -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestionnaire d'utilisateur - MDL</title>
-
-    <!-- Links -->
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <link href="style.css" rel="stylesheet">
+    <title>Listes des clients</title>
 </head>
 
 <body>
-    <h1>Gestionnaire d'utilisateur</h1>
-
-    <form>
-        <label for="first">Prénom</label>
-        <input name="first" id="first" type="text">
-
-        <label for="last">Nom</label>
-        <input name="last" id="last" type="text">
-
-        <label for="email">Email</label>
-        <input name="email" id="email" type="email">
-
-        <label for="company">Société</label>
-        <input name="company" id="company" type="text">
-
-        <label for="country">Pays</label>
-        <input name="country" id="country" type="text">
-
-        <input value="Créer utilisateur" type="submit">
-        <p id="error"></p>
-    </form>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -48,30 +23,32 @@
                         <a href="add.html"><button type="button" class="btn btn-primary"><i class="fa fa-user"></i>
                                 Ajouter un
                                 client</button></a>
-                        <a href="graphic.html"><button type="button" class="btn btn-primary"><i
-                                    class="fa fa-bar-chart"></i>
-                                Représentation graphique</button></a>
+                        <a href="graphic.html"><button type="button" class="btn btn-primary"><i class="fa fa-bar-chart"></i>
+                            Représentation graphique</button></a>
                     </div>
                     <div class="table-responsive">
                         <table class="table no-wrap user-table mb-0">
                             <thead>
                                 <tr>
-                                    <th scope="col" class="border-0 text-uppercase font-medium p1-4">Prénom</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium">Nom</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium">Email</th>
+                                    <th scope="col" class="border-0 text-uppercase font-medium p1-4">id</th>
+                                    <th scope="col" class="border-0 text-uppercase font-medium">Nom Prénom</th>
                                     <th scope="col" class="border-0 text-uppercase font-medium">Société</th>
                                     <th scope="col" class="border-0 text-uppercase font-medium">Pays</th>
-                                    <th scope="col" class="border-0 text-uppercase font-medium">Date</th>
+                                    <th scope="col" class="border-0 text-uppercase font-medium">E-mail</th>
+                                    <th scope="col" class="border-0 text-uppercase font-medium">Création</th>
                                     <th scope="col" class="border-0 text-uppercase font-medium"></th>
                                 </tr>
                             </thead>
-                            <tbody id="users"></tbody>
+                            <tbody id="myTable">
+
+                            </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
