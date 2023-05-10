@@ -5,7 +5,7 @@
     font-family: "Open Sans", sans-serif;
 }
 
-html, body {
+ html, body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -21,10 +21,11 @@ table {
 
 td, th {
     padding: 0.75em 1em;
+    
 }
 
 td img {
-    width: 1em;
+    width: 2em;
 }
 
 td input {
@@ -40,7 +41,7 @@ tr:not(:last-child) {
 }
 
 tr:nth-child(2n) {
-    background-color: #ffD40055;
+    background-color: #36cf4855;
 }
 
 form {
@@ -49,22 +50,45 @@ form {
     gap: 0.5em;
     margin-bottom: 20px;
 }
-
-input {
-    outline: none;
-    border: none;
-    border-bottom: 1px solid #999;
-}
-
 input:focus {
     border-bottom: 2px solid #ffD400;
+} 
+
+table {
+    border: 3px solid #6495ed;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
 }
 
+thead,
+tfoot {
+    background-color: #D0E3FA;
+    background-image: url(sky.jpg);
+    border: 1px solid #6495ed;
+}
 
+tbody {
+    background-color: #FFFFFF;
+    border: 1px solid #6495ed;
+}
 
+th {
+    font-family: monospace;
+    border: 1px dotted #6495ed;
+    padding: 5px;
+    background-color: #EFF6FF;
+    width: 25%;
+}
 
-  
-  
-  
-  
-  
+td {
+    font-family: sans-serif;
+    font-size: 80%;
+    border: 1px solid #6495ed;
+    padding: 5px;
+    text-align: left;
+}
+
+caption {
+    font-family: sans-serif;
+}

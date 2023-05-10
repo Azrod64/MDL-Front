@@ -2,7 +2,8 @@
 
 ### Arguments
 
-Permet de lancer le projet quand vous êtes dans le répertoire racine.
+Il faut téléchrger et extraire les deux répertoire (MDL-Back et MDL-Front).
+Dans chacun des répertoire, mettez vous à la racine, puis exécutez la commande suivante :  
 
 ```bash
 $ node main.js
